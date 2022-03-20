@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block content %}
+<div class="bank-content">
+    <h1>Banks and Branches</h1>
+    <div class="bank-interactive">
+        <div class="branch-producer">
+            <h2>Branch Producer</h2>
+            <p>How many branches would you like to produce?</p>
+            <div>
+                <input type="number" min="1" id="branch-input">
+                <button id="branch-btn" type="button" class="btn btn-success">Generate</button>
+            </div>
+            
+        </div>
+        <div class="bank producer">
+            <h2>Bank Producer</h2>
+        </div>
+        
+    </div>
+</div>
+<script src="../static/javascript/banks.js"></script>
+{% endblock %}
