@@ -1,0 +1,18 @@
+{% extends "layout.html" %} {% block content %}
+<div class="bank-content">
+  <h1>Applications</h1>
+  <div class="bank-interactive">
+    <div class="branch-producer">
+      <h2>Application Producer</h2>
+      <p>How many applications would you like to produce?</p>
+      <div>
+        <input type="number" min="1" id="branch-input" />
+        <button id="branch-btn" type="button" class="btn btn-success">
+          Generate
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../static/javascript/producers.js"></script>
+{% endblock %}
